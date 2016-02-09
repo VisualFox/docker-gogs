@@ -22,8 +22,8 @@ echo "export GOGS_CUSTOM=${GOGS_CUSTOM}" >> /etc/profile
 mv $GOPATH/src/github.com/gogits/gogs /app/
 
 # folder and permission
-ln -s /data/gogs/data /app/data && chown -h git:git /app/gogs/data
-ln -s /data/gogs/log /app/log && chown -h git:git /app/gogs/log
+ln -s /data/gogs/data /app/gogs/data && chown -h git:git /app/gogs/data
+ln -s /data/gogs/log /app/gogs/log && chown -h git:git /app/gogs/log
 
 # Remove build deps
 apk --no-progress del go
